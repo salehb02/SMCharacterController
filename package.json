@@ -1,0 +1,11 @@
+{
+  "name": "com.salehb02.smcharactercontroller",
+  "version": "1.0.0",
+  "unity": "2022.3",
+  "author": {
+    "name": "Saleh Bagheri",
+    "email": "salehbagheri1381@gmail.com"
+  },
+  "displayName": "SMCharacterController",
+  "description": "It's a simple First Person Controller"
+}
