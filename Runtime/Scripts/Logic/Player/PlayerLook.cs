@@ -18,9 +18,9 @@ namespace SMCharacterController
 
         private void Update()
         {
-            transform.Rotate(Vector3.up * input.Look.x * Time.deltaTime * mouseSensitivity);
+            transform.Rotate(Vector3.up * input.LookDelta.x * Time.deltaTime * mouseSensitivity);
 
-            var newRot = headPivot.transform.localRotation * Quaternion.Euler(-input.Look.y * Time.deltaTime * mouseSensitivity, 0, 0);
+            var newRot = headPivot.transform.localRotation * Quaternion.Euler(-input.LookDelta.y * Time.deltaTime * mouseSensitivity, 0, 0);
             newRot.eulerAngles = new Vector3(ClampAngle(newRot.eulerAngles.x, minMaxVerticalLookRotation.x, minMaxVerticalLookRotation.y), 0, 0);
 
             headPivot.transform.localRotation = newRot;
